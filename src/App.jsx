@@ -202,7 +202,13 @@ const handleCityChange = (index, newCity) => {
                           /> 
                         </div>
                         <Clock value={containers[0].referenceTime} renderNumbers={true} />
-                       
+                        <div className='icons'>
+                          <FontAwesomeIcon
+                                icon={faSyncAlt}  // Clear button (refresh icon)
+                                onClick={() => handleClearCity(index)}  // Add functionality to clear the city
+                                style={{ marginRight: '0' }}
+                              />
+                          </div>
                       </div>
                       
                     ) : (
